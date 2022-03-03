@@ -74,7 +74,7 @@ def build_model():
 class Agent:
     def __init__(self, max_mem):
         # self.model = build_model()
-        self.model = load_model('models/John_Fully_Trained')
+        self.model = load_model('John_Fully_Trained')
         self.target_model = build_model()
         self.target_model.set_weights(self.model.get_weights())
 
